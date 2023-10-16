@@ -17,21 +17,48 @@ body {
     color: #f9faf8;
 }
 
-.header-link-text, .first-section-secondary-text {
+.header-link-text, .presentation-secondary-text {
     color: #e5e7eb;
     font-size: 18px;
     text-decoration: none;
 }
 
-.first-section-main-text {
+.presentation-main-text {
     font-size: 48px;
     font-weight: 700;
     color: #f9faf8;
 }
 
+.info-main-text {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.info-secondary-text {
+    color: #1f2937;
+    margin-top: 10px;
+}
+
+.quote-main-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+.quote-secondary-text {
+    text-align: end;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.action-main-text, .action-secondary-text {
+    color: white;
+}
+
 /* Buttons */
 
-.first-section-button {
+.presentation-button {
     align-self: flex-start;
     color: #f9faf8;
     background-color: #3882f6;
@@ -41,9 +68,19 @@ body {
     font-weight: 600;
 }
 
+.action-button {
+    border-style: solid;
+    border-color: white;
+    color: white;
+    background-color: #3882f6;
+    border-radius: 8px;
+    padding: 0px 50px;
+}
+
 /* General Layout */
 .header {
     display: flex;
+    flex-wrap: wrap;
     background-color: #1F2937;
     padding: 10px 400px;
     align-items: baseline;
@@ -61,7 +98,7 @@ body {
     flex: 1;
 }
 
-.first-section {
+.presentation {
     display: flex;
     flex: 1;
     background-color: #1F2937;
@@ -69,7 +106,7 @@ body {
     gap: 100px;
 }
 
-.first-section div {
+.presentation div {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -77,19 +114,59 @@ body {
     gap: 10px;
 }
 
-.second-section {
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+    text-align: center;
+    padding: 60px 400px;
+}
+
+.info-content {
+    display: flex;
+    gap: 40px;
+}
+
+.info-content div {
     flex: 1;
 }
 
-.third-section {
-    flex: 1;
+.info-box {
+    height: 235px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #3882f6;
+    border-radius: 16px;
 }
 
-.fourth-section {
+.quote {
     flex: 1;
+    background-color: #e5e7eb;
+    padding: 150px 400px;
+}
+
+.action {
+    display: flex;
+    flex: 1;
+    padding: 100px 400px;
+}
+
+.action-container {
+    flex: 1;
+    display: flex;
+    background-color: #3882f6;
+    padding: 50px 100px;
+    border-radius: 8px;
+}
+
+.action-container div {
+    flex-grow: 2;
 }
 
 .footer {
     background-color: #1F2937;
     color: white;
+    padding: 40px 0px;
+    text-align: center;
 }
